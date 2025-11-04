@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Headphone Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎧 Soundora</h1>
+  </header>
+
+  <section class="filters">
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+      <option value="Premium">Premium</option>
+      <option value="Wireless">Wireless</option>
+      <option value="Budget">Budget</option>
+    </select>
+
+    <select id="priceFilter">
+      <option value="all">All Prices</option>
+      <option value="low">Below ₹5,000</option>
+      <option value="mid">₹5,000 - ₹20,000</option>
+      <option value="high">Above ₹20,000</option>
+    </select>
+  </section>
+
+  <main id="productGrid"></main>
+
+  <aside class="cart">
+    <h2>Your Cart 🛒</h2>
+    <ul id="cartItems"></ul>
+    <div class="cart-total">
+      <p>Subtotal: ₹<span id="subtotal">0</span></p>
+      <p>Tax (18%): ₹<span id="tax">0</span></p>
+      <p class="grand-total">Total: ₹<span id="total">0</span></p>
+      <button id="clearCart">Clear Cart</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
